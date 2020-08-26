@@ -6,9 +6,9 @@ import geocoder
 api_key = 'AIzaSyDHVCOSbx-b4iAfVwgOZdl4WHideVzZ93Q'
 
 
-def customer_parse_csv():
-    ipath = Path(__file__).parent / './../../customers.csv'
-    opath = Path(__file__).parent / './../../customers_output.csv'
+def run():
+    ipath = Path(__file__).parent / '../customers.csv'
+    opath = Path(__file__).parent / '../customers_output.csv'
     with ipath.open(mode='r') as i_obj, opath.open(mode='w') as o_obj:
         input_reader = csv.reader(i_obj)
         output_writer = csv.writer(o_obj)
